@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "Image Transform Lite — Procesamiento de imágenes en lote para macOS",
+    "description": "App nativa para macOS Apple Silicon. Procesa imágenes en lote con 7 transformaciones, vista previa en tiempo real y presets reutilizables. Gratis y open source.",
+    "ogTitle": "Image Transform Lite — Procesamiento de imágenes en lote para macOS",
+    "ogDescription": "Procesamiento por lotes con vista previa en tiempo real, drag-and-drop y presets reutilizables. Gratis y open source.",
+    "keywords": [
+      "procesador de imágenes macOS",
+      "batch image processor",
+      "convertir webp mac",
+      "redimensionar imágenes mac",
+      "image transform",
+      "imagen en lote",
+      "Pillow macOS app",
+      "MIT open source"
+    ]
+  },
+  "nav": {
+    "features": "Características",
+    "transformations": "Transformaciones",
+    "howItWorks": "Cómo funciona",
+    "download": "Descargar",
+    "downloadCta": "Descargar"
+  },
+  "hero": {
+    "badgeWithVersion": "v{version} — Última versión",
+    "headlineLine1": "Procesamiento de imágenes",
+    "headlineLine2": "en lote para macOS,",
+    "headlineAccent": "rápido y simple",
+    "subtitle": "Aplicación nativa para macOS Apple Silicon. 7 transformaciones, vista previa en tiempo real y procesamiento por lotes con presets reutilizables.",
+    "benefits": [
+      "Vista previa antes/después en tiempo real",
+      "Drag-and-drop para reordenar transformaciones",
+      "Presets exportables como JSON"
+    ],
+    "ctaDownload": "Descargar PKG",
+    "ctaGithub": "Ver en GitHub",
+    "social": {
+      "license": "Licencia MIT",
+      "openSource": "Código abierto",
+      "platform": "macOS Apple Silicon",
+      "noTelemetry": "Sin telemetría"
+    },
+    "mockup": {
+      "windowTitle": "Image Transform Lite",
+      "presetsLabel": "Mis Recetas",
+      "presetDefault": "Default",
+      "presetWeb": "Web",
+      "inputLabel": "ENTRADA",
+      "inputPath": "/Users/.../input_files",
+      "previewLabel": "PREVISUALIZACIÓN",
+      "previewBefore": "Original",
+      "previewAfter": "Resultado",
+      "process": "Procesar imágenes"
+    }
+  },
+  "stats": {
+    "title": "Diseñado para procesar lotes reales",
+    "subtitle": "Las cifras que importan.",
+    "items": {
+      "transformations": "Transformaciones",
+      "inputFormats": "Formatos de entrada",
+      "outputFormats": "Formatos de salida",
+      "version": "Versión actual"
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "subtitle": "Cuatro pasos. Sin complicaciones.",
+    "steps": {
+      "import": {
+        "title": "Importar",
+        "description": "Selecciona la carpeta con tus imágenes. Soporta búsqueda recursiva en subcarpetas."
+      },
+      "configure": {
+        "title": "Configurar",
+        "description": "Activa las transformaciones que necesites y reordénalas con drag-and-drop."
+      },
+      "preview": {
+        "title": "Vista previa",
+        "description": "Visualiza el antes y después en tiempo real con cada cambio que hagas."
+      },
+      "export": {
+        "title": "Exportar",
+        "description": "Procesa todo el lote y exporta a WebP, JPEG, PNG o TIFF preservando la estructura."
+      }
+    }
+  },
+  "features": {
+    "title": "Todo lo que necesitas para procesar imágenes",
+    "subtitle": "Una herramienta completa para fotógrafos, diseñadores y creadores de contenido en macOS.",
+    "items": {
+      "live-preview": {
+        "title": "Vista previa en vivo",
+        "description": "Ve el resultado antes/después en tiempo real con debounce de 150ms al cambiar parámetros."
+      },
+      "drag-and-drop": {
+        "title": "Drag-and-drop",
+        "description": "Reordena el pipeline de transformaciones arrastrando las tarjetas con Sortable.js."
+      },
+      "presets": {
+        "title": "Presets JSON",
+        "description": "Guarda combinaciones como recetas reutilizables. Importa/exporta como archivos JSON."
+      },
+      "batch": {
+        "title": "Procesamiento en lote",
+        "description": "Procesa carpetas completas recursivamente preservando la estructura de directorios."
+      },
+      "multi-format": {
+        "title": "Multi-formato",
+        "description": "Lee JPG, PNG, WebP, BMP y TIFF. Exporta a WebP, JPEG, PNG o TIFF con calidad configurable."
+      },
+      "auto-update": {
+        "title": "Auto-actualización",
+        "description": "Detecta nuevas versiones desde GitHub Releases, las descarga y prepara la instalación."
+      },
+      "sidebar": {
+        "title": "Sidebar colapsable",
+        "description": "Maximiza tu espacio de trabajo. La sidebar se colapsa a 48px con tooltips contextuales."
+      },
+      "open-source": {
+        "title": "Código abierto MIT",
+        "description": "Auditable, sin telemetría, sin cuentas. Construido con Python y Pillow."
+      }
+    }
+  },
+  "transformations": {
+    "title": "7 transformaciones, infinitas combinaciones",
+    "subtitle": "Cada transformación se aplica en el orden que tú decidas.",
+    "before": "Antes",
+    "after": "Después",
+    "items": {
+      "flip": {
+        "title": "Flip",
+        "description": "Voltea horizontal o verticalmente."
+      },
+      "rotate": {
+        "title": "Rotate",
+        "description": "Rota cualquier ángulo de -360° a 360° con fondo transparente."
+      },
+      "crop": {
+        "title": "Safe Square Crop",
+        "description": "Recorte cuadrado inteligente que preserva las esquinas opacas tras una rotación."
+      },
+      "resize": {
+        "title": "Resize",
+        "description": "Redimensiona por porcentaje (10-500%) o dimensiones fijas con aspect ratio opcional."
+      },
+      "brightness": {
+        "title": "Brightness",
+        "description": "Ajusta el brillo entre 0.5 y 2.0."
+      },
+      "contrast": {
+        "title": "Contrast",
+        "description": "Ajusta el contraste entre 0.5 y 2.0."
+      },
+      "sharpness": {
+        "title": "Sharpness",
+        "description": "Define la nitidez entre 0.0 y 3.0."
+      }
+    }
+  },
+  "download": {
+    "title": "Descargar Image Transform Lite",
+    "subtitle": "macOS Apple Silicon (arm64). Gratis y open source.",
+    "badgeWithVersion": "v{version} — Última versión",
+    "options": {
+      "pkg": {
+        "title": "Instalador .pkg",
+        "description": "Doble click e instala automáticamente en /Applications.",
+        "cta": "Descargar .pkg",
+        "badge": "Recomendado"
+      },
+      "zip": {
+        "title": "Archivo .zip",
+        "description": "Descomprime y mueve la app a /Applications manualmente.",
+        "cta": "Descargar .zip"
+      }
+    },
+    "viewAll": "Ver todas las versiones en GitHub",
+    "requirements": "Requiere macOS 11 o superior. Apple Silicon (arm64).",
+    "gatekeeperNote": "Primera vez: click derecho → Abrir (la app no está firmada con certificado de Apple Developer)."
+  },
+  "footer": {
+    "tagline": "Procesamiento de imágenes en lote para macOS. Gratis, open source, sin telemetría.",
+    "navigation": "Navegación",
+    "resources": "Recursos",
+    "legal": "Legal",
+    "links": {
+      "github": "GitHub",
+      "releases": "Releases",
+      "issues": "Reportar un bug",
+      "creator": "Creador"
+    },
+    "license": "Licencia MIT",
+    "rights": "Todos los derechos reservados."
+  },
+  "language": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "La página que buscas no existe o ha sido movida.",
+    "cta": "Volver al inicio"
+  }
+}
