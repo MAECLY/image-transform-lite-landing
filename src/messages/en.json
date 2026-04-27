@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "Image Transform Lite — Batch image processing for macOS",
+    "description": "Native macOS Apple Silicon app for batch image processing. 7 transformations, live preview, reusable presets. Free and open source.",
+    "ogTitle": "Image Transform Lite — Batch image processing for macOS",
+    "ogDescription": "Batch processing with live before/after preview, drag-and-drop, and reusable presets. Free and open source.",
+    "keywords": [
+      "macOS image processor",
+      "batch image processor",
+      "convert to webp mac",
+      "resize images mac",
+      "image transform app",
+      "batch converter mac",
+      "Pillow macOS",
+      "MIT open source app"
+    ]
+  },
+  "nav": {
+    "features": "Features",
+    "transformations": "Transformations",
+    "howItWorks": "How it works",
+    "download": "Download",
+    "downloadCta": "Download"
+  },
+  "hero": {
+    "badgeWithVersion": "v{version} — Latest release",
+    "headlineLine1": "Batch image processing",
+    "headlineLine2": "for macOS,",
+    "headlineAccent": "fast and simple",
+    "subtitle": "Native macOS Apple Silicon app. 7 transformations, live preview, and batch processing with reusable presets.",
+    "benefits": [
+      "Live before/after preview",
+      "Drag-and-drop transformation reordering",
+      "JSON-exportable presets"
+    ],
+    "ctaDownload": "Download PKG",
+    "ctaGithub": "View on GitHub",
+    "social": {
+      "license": "MIT licensed",
+      "openSource": "Open source",
+      "platform": "macOS Apple Silicon",
+      "noTelemetry": "No telemetry"
+    },
+    "mockup": {
+      "windowTitle": "Image Transform Lite",
+      "presetsLabel": "My Presets",
+      "presetDefault": "Default",
+      "presetWeb": "Web",
+      "inputLabel": "INPUT",
+      "inputPath": "/Users/.../input_files",
+      "previewLabel": "PREVIEW",
+      "previewBefore": "Original",
+      "previewAfter": "Result",
+      "process": "Process images"
+    }
+  },
+  "stats": {
+    "title": "Built to process real batches",
+    "subtitle": "The numbers that matter.",
+    "items": {
+      "transformations": "Transformations",
+      "inputFormats": "Input formats",
+      "outputFormats": "Output formats",
+      "version": "Current version"
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Four steps. No complications.",
+    "steps": {
+      "import": {
+        "title": "Import",
+        "description": "Pick the folder with your images. Recursive search across subfolders is supported."
+      },
+      "configure": {
+        "title": "Configure",
+        "description": "Enable the transformations you need and reorder them with drag-and-drop."
+      },
+      "preview": {
+        "title": "Preview",
+        "description": "See the before/after in real time as you tweak each parameter."
+      },
+      "export": {
+        "title": "Export",
+        "description": "Process the full batch and export to WebP, JPEG, PNG or TIFF preserving folder structure."
+      }
+    }
+  },
+  "features": {
+    "title": "Everything you need to process images",
+    "subtitle": "A complete toolkit for photographers, designers, and content creators on macOS.",
+    "items": {
+      "live-preview": {
+        "title": "Live preview",
+        "description": "See the before/after result in real time, with 150ms debounce on every parameter change."
+      },
+      "drag-and-drop": {
+        "title": "Drag-and-drop",
+        "description": "Reorder the transformation pipeline by dragging cards, powered by Sortable.js."
+      },
+      "presets": {
+        "title": "JSON presets",
+        "description": "Save combinations as reusable recipes. Import/export them as JSON files."
+      },
+      "batch": {
+        "title": "Batch processing",
+        "description": "Process whole folders recursively while preserving the original directory structure."
+      },
+      "multi-format": {
+        "title": "Multi-format",
+        "description": "Reads JPG, PNG, WebP, BMP, and TIFF. Exports to WebP, JPEG, PNG, or TIFF with configurable quality."
+      },
+      "auto-update": {
+        "title": "Auto-update",
+        "description": "Detects new versions from GitHub Releases, downloads them, and prepares the installation."
+      },
+      "sidebar": {
+        "title": "Collapsible sidebar",
+        "description": "Maximize workspace. The sidebar collapses to 48px with contextual tooltips."
+      },
+      "open-source": {
+        "title": "MIT open source",
+        "description": "Auditable, no telemetry, no accounts. Built with Python and Pillow."
+      }
+    }
+  },
+  "transformations": {
+    "title": "7 transformations, infinite combinations",
+    "subtitle": "Each transformation runs in the order you choose.",
+    "before": "Before",
+    "after": "After",
+    "items": {
+      "flip": {
+        "title": "Flip",
+        "description": "Flip horizontally or vertically."
+      },
+      "rotate": {
+        "title": "Rotate",
+        "description": "Rotate any angle from -360° to 360° with transparent background."
+      },
+      "crop": {
+        "title": "Safe Square Crop",
+        "description": "Smart square crop that preserves opaque corners after a rotation."
+      },
+      "resize": {
+        "title": "Resize",
+        "description": "Resize by percentage (10-500%) or fixed dimensions with optional aspect ratio."
+      },
+      "brightness": {
+        "title": "Brightness",
+        "description": "Adjust brightness between 0.5 and 2.0."
+      },
+      "contrast": {
+        "title": "Contrast",
+        "description": "Adjust contrast between 0.5 and 2.0."
+      },
+      "sharpness": {
+        "title": "Sharpness",
+        "description": "Set sharpness between 0.0 and 3.0."
+      }
+    }
+  },
+  "download": {
+    "title": "Download Image Transform Lite",
+    "subtitle": "macOS Apple Silicon (arm64). Free and open source.",
+    "badgeWithVersion": "v{version} — Latest release",
+    "options": {
+      "pkg": {
+        "title": ".pkg installer",
+        "description": "Double-click and it installs automatically into /Applications.",
+        "cta": "Download .pkg",
+        "badge": "Recommended"
+      },
+      "zip": {
+        "title": ".zip archive",
+        "description": "Unzip and move the app to /Applications manually.",
+        "cta": "Download .zip"
+      }
+    },
+    "viewAll": "View all releases on GitHub",
+    "requirements": "Requires macOS 11 or later. Apple Silicon (arm64).",
+    "gatekeeperNote": "First launch: right-click → Open (the app isn't signed with an Apple Developer certificate)."
+  },
+  "footer": {
+    "tagline": "Batch image processing for macOS. Free, open source, no telemetry.",
+    "navigation": "Navigation",
+    "resources": "Resources",
+    "legal": "Legal",
+    "links": {
+      "github": "GitHub",
+      "releases": "Releases",
+      "issues": "Report a bug",
+      "creator": "Creator"
+    },
+    "license": "MIT License",
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you're looking for doesn't exist or has been moved.",
+    "cta": "Back to home"
+  }
+}
