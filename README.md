@@ -36,7 +36,7 @@ src/
 │       └── page.tsx                 # composición de secciones
 ├── components/                      # Hero, Stats, Features, TransformationsShowcase, …
 │   ├── ui/                          # AnimatedOnScroll, SectionWrapper, GlowCard
-│   └── showcase/                    # 7 demos de transformaciones (CSS-driven)
+│   └── showcase/                    # 8 demos de transformaciones (CSS-driven)
 ├── i18n/                            # config + dictionaries loader
 ├── messages/                        # es.json, en.json
 └── lib/                             # constants, useGitHubRelease, useDictionary
