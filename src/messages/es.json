@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Image Transform Lite — Procesamiento de imágenes en lote para macOS",
-    "description": "App nativa para macOS Apple Silicon. Procesa imágenes en lote con 7 transformaciones, vista previa en tiempo real y presets reutilizables. Gratis y open source.",
+    "description": "App nativa para macOS Apple Silicon. Procesa imágenes en lote con 8 transformaciones, vista previa en tiempo real y presets reutilizables. Gratis y open source.",
     "ogTitle": "Image Transform Lite — Procesamiento de imágenes en lote para macOS",
     "ogDescription": "Procesamiento por lotes con vista previa en tiempo real, drag-and-drop y presets reutilizables. Gratis y open source.",
     "keywords": [
@@ -12,7 +12,7 @@
       "image transform",
       "imagen en lote",
       "Pillow macOS app",
-      "MIT open source"
+      "AGPL-3.0 open source"
     ]
   },
   "nav": {
@@ -27,7 +27,7 @@
     "headlineLine1": "Procesamiento de imágenes",
     "headlineLine2": "en lote para macOS,",
     "headlineAccent": "rápido y simple",
-    "subtitle": "Aplicación nativa para macOS Apple Silicon. 7 transformaciones, vista previa en tiempo real y procesamiento por lotes con presets reutilizables.",
+    "subtitle": "Aplicación nativa para macOS Apple Silicon. 8 transformaciones, vista previa en tiempo real y procesamiento por lotes con presets reutilizables.",
     "benefits": [
       "Vista previa antes/después en tiempo real",
       "Drag-and-drop para reordenar transformaciones",
@@ -36,7 +36,7 @@
     "ctaDownload": "Descargar PKG",
     "ctaGithub": "Ver en GitHub",
     "social": {
-      "license": "Licencia MIT",
+      "license": "Licencia AGPL-3.0",
       "openSource": "Código abierto",
       "platform": "macOS Apple Silicon",
       "noTelemetry": "Sin telemetría"
@@ -119,13 +119,13 @@
         "description": "Maximiza tu espacio de trabajo. La sidebar se colapsa a 48px con tooltips contextuales."
       },
       "open-source": {
-        "title": "Código abierto MIT",
+        "title": "Código abierto AGPL-3.0",
         "description": "Auditable, sin telemetría, sin cuentas. Construido con Python y Pillow."
       }
     }
   },
   "transformations": {
-    "title": "7 transformaciones, infinitas combinaciones",
+    "title": "8 transformaciones, infinitas combinaciones",
     "subtitle": "Cada transformación se aplica en el orden que tú decidas.",
     "before": "Antes",
     "after": "Después",
@@ -157,6 +157,10 @@
       "sharpness": {
         "title": "Sharpness",
         "description": "Define la nitidez entre 0.0 y 3.0."
+      },
+      "watermark": {
+        "title": "Watermark",
+        "description": "Añade texto como marca de agua: tamaño, opacidad y posición (4 esquinas o centro)."
       }
     }
   },
@@ -192,8 +196,8 @@
       "issues": "Reportar un bug",
       "creator": "Creador"
     },
-    "license": "Licencia MIT",
-    "rights": "Todos los derechos reservados."
+    "license": "Licencia GNU AGPL-3.0",
+    "rights": "Software libre: puedes usarlo, estudiarlo, compartirlo y mejorarlo."
   },
   "language": {
     "label": "Idioma",

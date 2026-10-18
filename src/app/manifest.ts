@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: `${PRODUCT.name} — Batch image processing for macOS`,
     short_name: PRODUCT.name,
     description:
-      "Native macOS Apple Silicon app for batch image processing with 7 transformations, live preview, and reusable presets.",
+      "Native macOS Apple Silicon app for batch image processing with 8 transformations, live preview, and reusable presets.",
     start_url: "/es",
     display: "standalone",
     background_color: "#ffffff",
