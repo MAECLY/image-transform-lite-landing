@@ -101,7 +101,7 @@ export default function OGImage() {
               maxWidth: 700,
             }}
           >
-            7 transformations, live preview, reusable presets. Free and open source.
+            8 transformations, live preview, reusable presets. Free and open source.
           </div>
 
           <div
@@ -111,7 +111,7 @@ export default function OGImage() {
               marginTop: 8,
             }}
           >
-            {["Apple Silicon", "MIT License", "Open Source"].map((badge) => (
+            {["Apple Silicon", "AGPL-3.0", "Open Source"].map((badge) => (
               <div
                 key={badge}
                 style={{

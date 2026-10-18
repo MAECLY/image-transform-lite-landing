@@ -15,6 +15,7 @@ interface DemoConfig {
   afterStyle: React.CSSProperties;
   beforeContainerClass?: string;
   afterContainerClass?: string;
+  afterOverlay?: string;
 }
 
 const demoStyles: Record<TransformationId, DemoConfig> = {
@@ -61,6 +62,12 @@ const demoStyles: Record<TransformationId, DemoConfig> = {
     beforeContainerClass: "aspect-[4/3]",
     afterContainerClass: "aspect-[4/3]",
   },
+  watermark: {
+    afterStyle: {},
+    beforeContainerClass: "aspect-[4/3]",
+    afterContainerClass: "aspect-[4/3]",
+    afterOverlay: "© MAECLY",
+  },
 };
 
 export default function TransformationsShowcase() {
@@ -96,6 +103,7 @@ export default function TransformationsShowcase() {
                 afterStyle={demo.afterStyle}
                 beforeContainerClass={demo.beforeContainerClass}
                 afterContainerClass={demo.afterContainerClass}
+                afterOverlay={demo.afterOverlay}
                 altBefore={`${item.title} — ${dict.transformations.before}`}
                 altAfter={`${item.title} — ${dict.transformations.after}`}
               />

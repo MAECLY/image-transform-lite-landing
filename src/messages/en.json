@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Image Transform Lite — Batch image processing for macOS",
-    "description": "Native macOS Apple Silicon app for batch image processing. 7 transformations, live preview, reusable presets. Free and open source.",
+    "description": "Native macOS Apple Silicon app for batch image processing. 8 transformations, live preview, reusable presets. Free and open source.",
     "ogTitle": "Image Transform Lite — Batch image processing for macOS",
     "ogDescription": "Batch processing with live before/after preview, drag-and-drop, and reusable presets. Free and open source.",
     "keywords": [
@@ -12,7 +12,7 @@
       "image transform app",
       "batch converter mac",
       "Pillow macOS",
-      "MIT open source app"
+      "AGPL-3.0 open source app"
     ]
   },
   "nav": {
@@ -27,7 +27,7 @@
     "headlineLine1": "Batch image processing",
     "headlineLine2": "for macOS,",
     "headlineAccent": "fast and simple",
-    "subtitle": "Native macOS Apple Silicon app. 7 transformations, live preview, and batch processing with reusable presets.",
+    "subtitle": "Native macOS Apple Silicon app. 8 transformations, live preview, and batch processing with reusable presets.",
     "benefits": [
       "Live before/after preview",
       "Drag-and-drop transformation reordering",
@@ -36,7 +36,7 @@
     "ctaDownload": "Download PKG",
     "ctaGithub": "View on GitHub",
     "social": {
-      "license": "MIT licensed",
+      "license": "AGPL-3.0 licensed",
       "openSource": "Open source",
       "platform": "macOS Apple Silicon",
       "noTelemetry": "No telemetry"
@@ -119,13 +119,13 @@
         "description": "Maximize workspace. The sidebar collapses to 48px with contextual tooltips."
       },
       "open-source": {
-        "title": "MIT open source",
+        "title": "Open source under AGPL-3.0",
         "description": "Auditable, no telemetry, no accounts. Built with Python and Pillow."
       }
     }
   },
   "transformations": {
-    "title": "7 transformations, infinite combinations",
+    "title": "8 transformations, infinite combinations",
     "subtitle": "Each transformation runs in the order you choose.",
     "before": "Before",
     "after": "After",
@@ -157,6 +157,10 @@
       "sharpness": {
         "title": "Sharpness",
         "description": "Set sharpness between 0.0 and 3.0."
+      },
+      "watermark": {
+        "title": "Watermark",
+        "description": "Add text as a watermark: size, opacity and position (4 corners or center)."
       }
     }
   },
@@ -192,8 +196,8 @@
       "issues": "Report a bug",
       "creator": "Creator"
     },
-    "license": "MIT License",
-    "rights": "All rights reserved."
+    "license": "GNU AGPL-3.0 License",
+    "rights": "Free software: you can use, study, share and improve it."
   },
   "language": {
     "label": "Language",
