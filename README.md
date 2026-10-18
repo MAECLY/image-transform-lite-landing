@@ -1,6 +1,6 @@
 # Image Transform Lite — Landing Page
 
-Sitio web bilingüe (es/en) para promocionar [Image Transform Lite](https://github.com/miguel50flowers/fe-image-transform-lite), una app de escritorio para macOS Apple Silicon que procesa imágenes en lote.
+Sitio web bilingüe (es/en) para promocionar [Image Transform Lite](https://github.com/MAECLY/image-transform-lite), una app de escritorio para macOS Apple Silicon que procesa imágenes en lote.
 
 ## Stack
 
@@ -36,7 +36,7 @@ src/
 │       └── page.tsx                 # composición de secciones
 ├── components/                      # Hero, Stats, Features, TransformationsShowcase, …
 │   ├── ui/                          # AnimatedOnScroll, SectionWrapper, GlowCard
-│   └── showcase/                    # 7 demos de transformaciones (CSS-driven)
+│   └── showcase/                    # 8 demos de transformaciones (CSS-driven)
 ├── i18n/                            # config + dictionaries loader
 ├── messages/                        # es.json, en.json
 └── lib/                             # constants, useGitHubRelease, useDictionary

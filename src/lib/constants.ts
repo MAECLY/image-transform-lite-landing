@@ -1,26 +1,23 @@
 export const PRODUCT = {
   name: "Image Transform Lite",
-  fallbackVersion: "1.4.0",
-  bundleId: "com.fiftyflowers.imagetransformlite",
+  fallbackVersion: "1.6.0",
+  bundleId: "com.maecly.imagetransformlite",
   minMacos: "11.0",
   arch: "Apple Silicon (arm64)",
-  homepage: "https://imagetransform.maecly.com",
+  homepage: "https://image-lite.maecly.com",
   author: {
     name: "MigelAngelEC",
     fullName: "Miguel Angel Esparza Calero",
-    url: "https://www.maecly.com",
+    url: "https://maecly.com",
   },
   github: {
-    owner: "miguel50flowers",
-    repo: "fe-image-transform-lite",
-    url: "https://github.com/miguel50flowers/fe-image-transform-lite",
-    releases:
-      "https://github.com/miguel50flowers/fe-image-transform-lite/releases",
-    issues:
-      "https://github.com/miguel50flowers/fe-image-transform-lite/issues",
-    license:
-      "https://github.com/miguel50flowers/fe-image-transform-lite/blob/main/LICENSE",
-    api: "https://api.github.com/repos/miguel50flowers/fe-image-transform-lite",
+    owner: "MAECLY",
+    repo: "image-transform-lite",
+    url: "https://github.com/MAECLY/image-transform-lite",
+    releases: "https://github.com/MAECLY/image-transform-lite/releases",
+    issues: "https://github.com/MAECLY/image-transform-lite/issues",
+    license: "https://github.com/MAECLY/image-transform-lite/blob/main/LICENSE",
+    api: "https://api.github.com/repos/MAECLY/image-transform-lite",
   },
 } as const;
 
@@ -64,7 +61,8 @@ export type TransformationId =
   | "resize"
   | "brightness"
   | "contrast"
-  | "sharpness";
+  | "sharpness"
+  | "watermark";
 
 export type TransformationIcon =
   | "FlipHorizontal"
@@ -73,7 +71,8 @@ export type TransformationIcon =
   | "Maximize"
   | "Sun"
   | "Contrast"
-  | "Aperture";
+  | "Aperture"
+  | "Stamp";
 
 export const TRANSFORMATIONS: ReadonlyArray<{
   id: TransformationId;
@@ -86,6 +85,7 @@ export const TRANSFORMATIONS: ReadonlyArray<{
   { id: "brightness", icon: "Sun" },
   { id: "contrast", icon: "Contrast" },
   { id: "sharpness", icon: "Aperture" },
+  { id: "watermark", icon: "Stamp" },
 ];
 
 export type StepIcon = "FolderOpen" | "Sliders" | "Eye" | "Download";
@@ -107,10 +107,10 @@ export const STATS: ReadonlyArray<{
   suffix?: string;
   decimals?: number;
 }> = [
-  { id: "transformations", value: 7 },
+  { id: "transformations", value: 8 },
   { id: "inputFormats", value: 5 },
   { id: "outputFormats", value: 4 },
-  { id: "version", value: 1.4, decimals: 1 },
+  { id: "version", value: 1.6, decimals: 1 },
 ];
 
 export const INPUT_FORMATS = ["JPG", "PNG", "WebP", "BMP", "TIFF"] as const;
@@ -150,4 +150,5 @@ export const SHOWCASE_IMAGES: Record<TransformationId, string> = {
   brightness: `https://images.unsplash.com/photo-1518837695005-2083093ee35b${UNSPLASH_PARAMS}`,
   contrast: `https://images.unsplash.com/photo-1517637382994-f02da38c6728${UNSPLASH_PARAMS}`,
   sharpness: `https://images.unsplash.com/photo-1500382017468-9049fed747ef${UNSPLASH_PARAMS}`,
+  watermark: `https://images.unsplash.com/photo-1506905925346-21bda4d32df4${UNSPLASH_PARAMS}`,
 };
