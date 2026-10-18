@@ -9,6 +9,7 @@ import {
   Sun,
   Contrast,
   Aperture,
+  Stamp,
 } from "lucide-react";
 import type { TransformationIcon } from "@/lib/constants";
 
@@ -20,6 +21,7 @@ const iconMap: Record<TransformationIcon, typeof FlipHorizontal> = {
   Sun,
   Contrast,
   Aperture,
+  Stamp,
 };
 
 interface BeforeAfterCardProps {
@@ -33,6 +35,8 @@ interface BeforeAfterCardProps {
   afterStyle: CSSProperties;
   beforeContainerClass?: string;
   afterContainerClass?: string;
+  /** Text drawn over the "after" image, for the watermark demo. */
+  afterOverlay?: string;
   altBefore: string;
   altAfter: string;
 }
@@ -48,6 +52,7 @@ export default function BeforeAfterCard({
   afterStyle,
   beforeContainerClass = "",
   afterContainerClass = "",
+  afterOverlay,
   altBefore,
   altAfter,
 }: BeforeAfterCardProps) {
@@ -92,7 +97,7 @@ export default function BeforeAfterCard({
             {afterLabel}
           </div>
           <div
-            className={`overflow-hidden rounded-apple bg-apple-bg border border-apple-blue/30 ${afterContainerClass}`}
+            className={`relative overflow-hidden rounded-apple bg-apple-bg border border-apple-blue/30 ${afterContainerClass}`}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -102,6 +107,14 @@ export default function BeforeAfterCard({
               className="w-full h-full object-cover block"
               style={afterStyle}
             />
+            {afterOverlay && (
+              <span
+                aria-hidden="true"
+                className="absolute right-2 bottom-1.5 text-[11px] font-semibold text-white/70 drop-shadow"
+              >
+                {afterOverlay}
+              </span>
+            )}
           </div>
         </div>
       </div>
