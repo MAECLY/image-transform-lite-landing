@@ -14,7 +14,9 @@ import {
   PRODUCT,
   type DownloadOptionId,
 } from "@/lib/constants";
-import { useDictionary } from "@/lib/dictionary-context";
+import { useDictionary, useLocale } from "@/lib/dictionary-context";
+import { formatMetricLabel } from "@/lib/github-metrics";
+import { useGitHubMetrics } from "@/lib/useGitHubMetrics";
 import { useGitHubRelease } from "@/lib/useGitHubRelease";
 
 const iconMap = {
@@ -30,6 +32,13 @@ export default function Download() {
     zip: zipUrl,
   };
   const badge = dict.download.badgeWithVersion.replace("{version}", version);
+  const locale = useLocale();
+  const { downloads } = useGitHubMetrics();
+  const downloadsLabel = formatMetricLabel(
+    downloads,
+    locale,
+    dict.hero.social.downloads
+  );
 
   return (
     <SectionWrapper
@@ -47,6 +56,12 @@ export default function Download() {
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-apple-green/10 text-apple-green border border-apple-green/20">
             {badge}
           </span>
+          {downloadsLabel && (
+            <p className="mt-3 flex items-center justify-center gap-1.5 text-xs text-apple-text-tertiary tabular-nums">
+              <DownloadIcon size={12} className="text-apple-blue" />
+              {downloadsLabel}
+            </p>
+          )}
         </div>
       </AnimatedOnScroll>
 
