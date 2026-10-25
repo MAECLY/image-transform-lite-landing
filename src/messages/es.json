@@ -39,7 +39,15 @@
       "license": "Licencia AGPL-3.0",
       "openSource": "Código abierto",
       "platform": "macOS Apple Silicon",
-      "noTelemetry": "Sin telemetría"
+      "noTelemetry": "Sin telemetría",
+      "downloads": {
+        "one": "{count} descarga",
+        "other": "{count} descargas"
+      }
+    },
+    "stars": {
+      "one": "{count} estrella en GitHub",
+      "other": "{count} estrellas en GitHub"
     },
     "mockup": {
       "windowTitle": "Image Transform Lite",

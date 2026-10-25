@@ -1,9 +1,19 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { ArrowRight, Github, Check, Shield, Scale } from "lucide-react";
+import {
+  ArrowRight,
+  Github,
+  Check,
+  Shield,
+  Scale,
+  Download,
+  Star,
+} from "lucide-react";
 import { PRODUCT } from "@/lib/constants";
-import { useDictionary } from "@/lib/dictionary-context";
+import { useDictionary, useLocale } from "@/lib/dictionary-context";
+import { formatCount, formatMetricLabel } from "@/lib/github-metrics";
+import { useGitHubMetrics } from "@/lib/useGitHubMetrics";
 import { useGitHubRelease } from "@/lib/useGitHubRelease";
 import AppMockup from "./AppMockup";
 
@@ -15,6 +25,14 @@ export default function Hero() {
   const dict = useDictionary();
   const { version, pkgUrl, isFresh } = useGitHubRelease();
   const badge = dict.hero.badgeWithVersion.replace("{version}", version);
+  const locale = useLocale();
+  const { downloads, stars } = useGitHubMetrics();
+  const downloadsLabel = formatMetricLabel(
+    downloads,
+    locale,
+    dict.hero.social.downloads
+  );
+  const starsLabel = formatMetricLabel(stars, locale, dict.hero.stars);
 
   return (
     <section className="relative min-h-[88vh] flex items-center overflow-hidden bg-white">
@@ -94,6 +112,16 @@ export default function Hero() {
               >
                 <Github size={16} />
                 {dict.hero.ctaGithub}
+                {starsLabel && stars !== null && (
+                  <span
+                    className="inline-flex items-center gap-1 pl-2 ml-0.5 border-l border-apple-border text-sm text-apple-text-secondary tabular-nums"
+                    title={starsLabel}
+                  >
+                    <Star size={13} aria-hidden="true" />
+                    <span aria-hidden="true">{formatCount(stars, locale)}</span>
+                    <span className="sr-only">{starsLabel}</span>
+                  </span>
+                )}
               </a>
             </div>
 
@@ -114,6 +142,15 @@ export default function Hero() {
               <span>{dict.hero.social.platform}</span>
               <span className="text-apple-border">·</span>
               <span>{dict.hero.social.noTelemetry}</span>
+              {downloadsLabel && (
+                <>
+                  <span className="text-apple-border">·</span>
+                  <span className="inline-flex items-center gap-1.5 tabular-nums">
+                    <Download size={12} className="text-apple-blue" />
+                    {downloadsLabel}
+                  </span>
+                </>
+              )}
             </div>
           </div>
 
