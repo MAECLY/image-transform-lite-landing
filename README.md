@@ -1,5 +1,7 @@
 # Image Transform Lite — Landing Page
 
+[![Estrellas](https://img.shields.io/github/stars/MAECLY/image-transform-lite-landing?style=flat-square&label=estrellas)](https://github.com/MAECLY/image-transform-lite-landing/stargazers) [![Visitas](https://hits.sh/github.com/MAECLY/image-transform-lite-landing.svg?label=visitas&style=flat-square)](https://hits.sh/github.com/MAECLY/image-transform-lite-landing/) [![Último commit](https://img.shields.io/github/last-commit/MAECLY/image-transform-lite-landing?style=flat-square&label=último%20commit)](https://github.com/MAECLY/image-transform-lite-landing/commits/main)
+
 Sitio web bilingüe (es/en) para promocionar [Image Transform Lite](https://github.com/MAECLY/image-transform-lite), una app de escritorio para macOS Apple Silicon que procesa imágenes en lote.
 
 ## Stack
